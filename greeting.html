@@ -108,16 +108,16 @@ function dispalyGreetings(today){
 
     function dispalyDate(today) {  
        
-        const days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
-        const monthNames = ["January", "February", "March", "April", "May", "June",
-  "July", "August", "September", "October", "November", "December"
+        const days = ['sunday', 'monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday'];
+        const monthNames = ["january", "february", "march", "april", "may", "june",
+  "july", "august", "september", "october", "november", "december"
 ];
 
         var dayName = days[today.getDay()];
         var monthName = monthNames[today.getMonth()];
         var date = today.getDate();
         var year = today.getFullYear();
-        document.getElementById('date').innerHTML =dayName+", "+monthName+" "+date+" "+year;
+        document.getElementById('date').innerHTML =dayName+" "+monthName+" "+date+" "+year;
 
     }
 
